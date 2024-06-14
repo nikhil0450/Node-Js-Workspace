@@ -6,8 +6,8 @@ Modules that node.js ships with
 
 * [Path](#path)
 * [Events](#events)
+* [Streams](#stream)
 * fs
-* stream
 * http
 
 ## Callbacks
@@ -31,3 +31,12 @@ Ex: reading data from a file, fetching data from a database or handling a networ
 - The events module allows us to work with events in Node.js
 - An event is an action or an occurrence that has happened in our application that we can respond to
 - Using the events module, we can dispatch our own custom events and respond to those custom events in a non-blocking manner
+
+### Streams
+
+- A stream is a sequence of data that is being moved from one point to another over time
+- Ex: watching a video on YouTube
+- The data arrives in chunks and you watch in chunks while the rest of the data arrives over time
+- Ex: transferring file contents from fileA to fileB
+- The contents arrive in chunks and you transfer in chunks while the remaining contents arrive over time
+- Prevents unnecessary data downloads and memory usage
