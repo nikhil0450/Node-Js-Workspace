@@ -7,8 +7,8 @@ Modules that node.js ships with
 * [Path](#path)
 * [Events](#events)
 * [Streams](#stream)
-* fs
-* http
+* [Fs](#fs-file-system)
+* [Http](#http)
 
 ## Callbacks
 * `Synchronous Callbacks`: A callback which is executed immediately is called as Synchronous callback
@@ -40,3 +40,37 @@ Ex: reading data from a file, fetching data from a database or handling a networ
 - Ex: transferring file contents from fileA to fileB
 - The contents arrive in chunks and you transfer in chunks while the remaining contents arrive over time
 - Prevents unnecessary data downloads and memory usage
+
+### FS (File System)
+
+- The file system module allows you to work with the file system of your computer.
+
+
+### HTTP
+- Hypertext Transfer Protocol
+- A protocol that defines a format for clients and servers to speak to each other
+- The client sends an HTTP request and the server responds with an HTTP response
+
+
+## `Types of Streams`
+`Readable streams` from which data can be read
+- Ex: Reading from a file as readable stream
+
+`Writable streams` to which we can write data
+- Ex: Writing to a file as writable stream
+
+`Duplex streams` that are both Readable and Writable
+- Ex: Sockets as a duplex stream
+
+
+`Transform streams` that can modify or transform the data as it is written and read
+- Ex: File compression where you can write compressed data and read de-compressed data to and from a file as a transform stream
+
+<hr>
+
+### `HTTP and Node`
+- We can create a web server using Node.js
+- Node.js has access to operating system functionality like networking
+- Node has an event loop to run tasks asynchronously and is perfect for creating web servers that can simultaneously handle large volumes of requests
+- The node server we create should still respect the HTTP format
+- The HTTP module allows creation of web servers that can transfer data over HTTP
