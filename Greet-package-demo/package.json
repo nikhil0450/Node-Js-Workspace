@@ -1,0 +1,13 @@
+{
+  "name": "greet-with-uppercase-demo",
+  "version": "1.0.0",
+  "description": "Demo package to check the working of self made package 'greet-with-uppercase'",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "greet-with-uppercase": "^1.0.7"
+  }
+}
